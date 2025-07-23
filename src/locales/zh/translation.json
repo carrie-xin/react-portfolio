@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "首页",
+    "skills": "技能",
+    "projects": "项目",
+    "about": "关于我",
+    "contact": "联系方式"
+  },
+  "logo": {
+    "personal": "个人",
+    "resume": "简历"
+  },
+  "hero": {
+    "greeting": "嗨~我是",
+    "name": "辛集芳",
+    "bio": "深耕前端九年，技术栈覆盖HTML/TS/Angular/Vue全链路，玩转ECharts多种图表，Ant/Element组件库二次封装小能手，Hybrid App跨端实战派。熟悉金融风控系统、虚拟货币交易平台等开发。代码洁癖+团队粘合剂，能扛需求能修Bug，希望在相关前端岗位发挥价值！",
+    "cta": "项目经历",
+    "scroll": "滚动"
+  },
+  "skills": {
+    "title1": "专业",
+    "title2": "技能",
+    "categories": {
+      "all": "全部",
+      "frontend": "前端",
+      "backend": "后端",
+      "tools": "工具"
+    }
+  },
+  "projects": {
+    "title1": "精选",
+    "title2": "项目",
+    "description": "这是以往做过的一些项目.",
+    "github_cta": "Github",
+    "items": [
+      {
+        "id": 1,
+        "title": "Nova 中台风控系统 2021.07 - 2025.04",
+        "subTitle": "项目职责",
+        "description": "该系统是面向金融机构的一站式风险管理平台，覆盖交易全生命周期监控、市场风险计量（FRTB标准）、多资产投组分析及自动化工作流引擎",
+        "responsibilities": "1.主导前端架构搭建（路由设计、全局布局、样式规范），奠定系统可拓展基础。2.实现 POC 可视化看板，提供灵活图表定制与数据分析能力。3.新增Swap, CapFloor等12类衍生品交易模块，覆盖 Trade Action等9种业务操作。4.重构 Market Data 核心页面，优化 FX Basis Curve、CDS Curve 等数据展示逻辑。",
+        "image": "/projects/project1.png",
+        "tags": ["Angular11", "Antd", "Sass", "Echarts"],
+        "demoUrl": "#",
+        "githubUrl": "#"
+      },
+      {
+        "id": 2,
+        "title": "UPI 法币交易平台 2020.11–2020.12",
+        "subTitle": "项目职责",
+        "description": "支持虚拟货币与法币互兑的跨端应用，集成银联卡申请、USDT充提、交易安全验证等支付功能。",
+        "responsibilities": "1.独立完成技术选型与架构设计，采用 Ionic5 快速搭建 20 + 交易相关页面，通过 Cordova 插件实现 HTML5 页面与原生 APP 无缝衔接；2.调用 Capacitor 原生 SDK 实现证件拍照上传、交易文件加密下载，保障支付信息安全； 3.接入谷歌身份验证器生成动态口令，加强平台交易操作的安全性；4.主导项目部署测试及 Bug 修复，推动项目一个月内完成上线；",
+        "image": "/projects/project2.png",
+        "tags": ["Angular10", "Ionic5", "Capacitor"],
+        "demoUrl": "#",
+        "githubUrl": "#"
+      },
+      {
+        "id": 3,
+        "title": "帷幄车辆管理系统 2018.12–2019.04",
+        "subTitle": "项目职责",
+        "description": "该系统提供给汽车租赁公司使用，包括车辆信息，司机信息，订单管理，合同签订，车辆出入库，收款结算，车辆保养，违章车辆处置等业务，有角色权限控制，可实现不同角色分管不同模块；",
+        "responsibilities": "1.基于 vue 框架，使用 nuxt 动态生成路由，vuex 实现全局状态管理,完成资产车辆、违章查询、系统配置等模块路由设计及页面独立开发；2.使用 Vue-chart实现数据可视化，生成不同类型图表；3.封装复用组件，如车型库配置、验车等；4.编写全局的过滤器，如表格数据格式化、请求参数格式过滤等",
+        "image": "/projects/project3.png",
+        "tags": ["Vue", "Nuxt", "Vuex", "Vue-chart"],
+        "demoUrl": "#",
+        "githubUrl": "#"
+      }
+    ]
+  },
+  "about": {
+    "title1": "关于",
+    "title2": "我",
+    "subtitle": "一名充满热情的前端开发",
+    "contact_me": "联系我",
+    "download_cv": "下载简历",
+    "cards": {
+      "core_tech": {
+        "title": "核心技能",
+        "description": "掌握HTML5/CSS3/Sass/ES6+/TypeScript，深入理解W3C标准，擅长Ajax性能优化."
+      },
+      "frameworks": {
+        "title": "框架工具",
+        "description": "掌握Angular生态（RxJS/Ionic/CLI），熟练使用 Vue(Vuex + Nuxt)；掌握ECharts(动态风险热力图、K线图）各类复杂图表，主导Flexmonster Pivot落地百万级数据下钻；熟悉BPMN流程引擎与Hybrid App开发，能独立完成跨端功能实现；"
+      },
+      "engineering": {
+        "title": "工程能力",
+        "description": "熟悉Webpack/Gulp构建优化，Git协作规范，推动组件化开发与持续集成；"
+      },
+      "financial": {
+        "title": "金融领域",
+        "description": "参与FRTB风控、VaR计算模块开发，对接IRS/CDS等衍生品交易系统，熟悉银行级接口规范；掌握国密SM4算法，在虚拟货币交易、客户敏感信息传输等场景中实现数据加密处理，保证用户数据及交易安全。"
+      }
+    }
+  },
+  "contact": {
+    "title1": "欢迎",
+    "title2": "联系",
+    "description": "有啥项目想法，或者想合作的话，欢迎随时联系我。",
+    "info_title": "联系方式",
+    "blog": "https://www.jianshu.com/u/b1652e41c9ae",
+    "email": "carriexin@gmail.com",
+    "phone": "+86159****9431",
+    "location": "广东深圳宝安区"
+  },
+  "footer": {
+    "copyright": "© {year} Pedrotech.co. All rights reserved."
+  }
+} 

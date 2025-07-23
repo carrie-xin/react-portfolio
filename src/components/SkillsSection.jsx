@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 const skills = [
   // Frontend
@@ -22,10 +23,16 @@ const skills = [
   { name: "Figma", level: 85, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
-
 export const SkillsSection = () => {
+  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState("all");
+
+  const categories = [
+    { id: "all", name: t("skills.categories.all") },
+    { id: "frontend", name: t("skills.categories.frontend") },
+    { id: "backend", name: t("skills.categories.backend") },
+    { id: "tools", name: t("skills.categories.tools") },
+  ];
 
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
@@ -34,22 +41,22 @@ export const SkillsSection = () => {
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          专业 <span className="text-primary"> 技能</span>
+          {t("skills.title1")} <span className="text-primary"> {t("skills.title2")}</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button
               key={key}
-              onClick={() => setActiveCategory(category)}
+              onClick={() => setActiveCategory(category.id)}
               className={cn(
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                activeCategory === category
+                activeCategory === category.id
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary/70 text-forefround hover:bd-secondary"
               )}
             >
-              {category}
+              {category.name}
             </button>
           ))}
         </div>

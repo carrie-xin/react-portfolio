@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "logo": {
+    "personal": "Personal",
+    "resume": "Resume"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Jifang Xin",
+    "bio": "Nine years of front-end experience, with a full-stack proficiency covering HTML/TS/Angular/Vue. Expert in ECharts for various charts, skilled in secondary encapsulation of Ant/Element component libraries, and experienced in Hybrid App cross-platform development. Familiar with financial risk control systems and virtual currency trading platform development. A code purist and team player, capable of handling requirements and fixing bugs, hoping to bring value to a relevant front-end position!",
+    "cta": "View My Work",
+    "scroll": "Scroll"
+  },
+  "skills": {
+    "title1": "Professional",
+    "title2": "Skills",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    }
+  },
+  "projects": {
+    "title1": "Featured",
+    "title2": "Projects",
+    "description": "Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.",
+    "github_cta": "Check My Github",
+    "items": [
+      {
+        "id": 1,
+        "title": "Nova Middle-Office Risk Control System 2021.07 - 2025.04",
+        "subTitle": "Project Responsibilities",
+        "description": "This system is a one-stop risk management platform for financial institutions, covering full lifecycle trade monitoring, market risk measurement (FRTB standard), multi-asset portfolio analysis, and an automated workflow engine.",
+        "responsibilities": "1. Led the front-end architecture setup (routing design, global layout, style specifications), establishing a foundation for system scalability.\n2. Implemented a POC visualization dashboard, providing flexible chart customization and data analysis capabilities.\n3. Added trading modules for 12 new derivative types, including Swap and CapFloor, covering 9 business operations like Trade Actions.\n4. Refactored the core Market Data page, optimizing the display logic for data such as FX Basis Curve and CDS Curve.",
+        "image": "/projects/project1.png",
+        "tags": ["Angular11", "Antd", "Sass", "Echarts"],
+        "demoUrl": "#",
+        "githubUrl": "#"
+      },
+      {
+        "id": 2,
+        "title": "UPI Fiat Trading Platform 2020.11–2020.12",
+        "subTitle": "Project Responsibilities",
+        "description": "A cross-platform application supporting the exchange of virtual currencies and fiat money, integrating payment functions such as UnionPay card application, USDT deposit/withdrawal, and transaction security verification.",
+        "responsibilities": "1. Independently completed technology selection and architectural design, using Ionic5 to quickly build 20+ transaction-related pages, and achieving seamless integration between HTML5 pages and the native APP via Cordova plugins.\n2. Called Capacitor native SDK to implement ID photo uploads and encrypted download of transaction files, ensuring the security of payment information.\n3. Integrated Google Authenticator to generate dynamic passwords, enhancing the security of platform transaction operations.\n4. Led project deployment, testing, and bug fixing, pushing the project to go live within one month.",
+        "image": "/projects/project2.png",
+        "tags": ["Angular10", "Ionic5", "Capacitor"],
+        "demoUrl": "#",
+        "githubUrl": "#"
+      },
+      {
+        "id": 3,
+        "title": "Weiwo Vehicle Management System 2018.12–2019.04",
+        "subTitle": "Project Responsibilities",
+        "description": "This system is for car rental companies and includes vehicle information, driver information, order management, contract signing, vehicle check-in/out, payment settlement, vehicle maintenance, and handling of vehicle violations. It has role-based access control, allowing different roles to manage different modules.",
+        "responsibilities": "1. Based on the Vue framework, used Nuxt for dynamic route generation and Vuex for global state management to complete the routing design and independent development of modules such as asset vehicles, violation inquiries, and system configuration.\n2. Used Vue-chart for data visualization to generate different types of charts.\n3. Encapsulated reusable components, such as vehicle model library configuration and vehicle inspection.\n4. Wrote global filters for tasks like formatting table data and filtering request parameters.",
+        "image": "/projects/project3.png",
+        "tags": ["Vue", "Nuxt", "Vuex", "Vue-chart"],
+        "demoUrl": "#",
+        "githubUrl": "#"
+      }
+    ]
+  },
+  "about": {
+    "title1": "About",
+    "title2": "Me",
+    "subtitle": "A Passionate Web Frontend Developer",
+    "contact_me": "Contact Me",
+    "download_cv": "Download CV",
+    "cards": {
+      "core_tech": {
+        "title": "Core Technologies",
+        "description": "Proficient in HTML5、CSS3、Sass、ES6+、TypeScript, with a deep understanding of W3C standards and expertise in Ajax performance optimization."
+      },
+      "frameworks": {
+        "title": "Frameworks & Tools",
+        "description": "Proficient in Angular (RxJS/Ionic/CLI) and Vue (Vuex + Nuxt).Expert in ECharts; led Flexmonster Pivot for million-level data drilling.Familiar with BPMN and Hybrid App development."
+      },
+      "engineering": {
+        "title": "Engineering Skills",
+        "description": "Familiar with Webpack/Gulp build optimization, Git collaboration standards, and promoting component-based development and continuous integration."
+      },
+      "financial": {
+        "title": "Financial Domain",
+        "description": "Familiar with FRTB risk control, VaR modules; integrated IRS/CDS systems; knows banking interfaces.Mastered SM4 encryption for virtual currency trading and sensitive data security."
+      }
+    }
+  },
+  "contact": {
+    "title1": "Get In",
+    "title2": "Touch",
+    "description": "Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.",
+    "info_title": "Contact Information",
+    "blog": "https://www.jianshu.com/u/b1652e41c9ae",
+    "email": "carriexin@gmail.com",
+    "phone": "+86159****9431",
+    "location": "Shenzhen.Guangdong.China"
+  },
+  "footer": {
+    "copyright": "© {year} Pedrotech.co. All rights reserved."
+  }
+} 

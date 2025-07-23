@@ -1,18 +1,21 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-
-const navItems = [
-  { name: "首页", href: "#hero" },
-  { name: "技能", href: "#skills" },
-  { name: "项目", href: "#projects" },
-  { name: "关于我", href: "#about" },
-  { name: "联系方式", href: "#contact" },
-];
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { name: t("nav.home"), href: "#hero" },
+    { name: t("nav.skills"), href: "#skills" },
+    { name: t("nav.projects"), href: "#projects" },
+    { name: t("nav.about"), href: "#about" },
+    { name: t("nav.contact"), href: "#contact" },
+  ];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,8 +38,8 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> 个人 </span>{" "}
-            简历
+            <span className="text-glow text-foreground"> {t("logo.personal")} </span>{" "}
+            {t("logo.resume")}
           </span>
         </a>
 

@@ -1,27 +1,28 @@
 import { Settings, Layers, Hammer, Shield } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const AboutSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="py-24 px-4 relative">
       {" "}
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          关于 <span className="text-primary"> 我</span>
+          {t("about.title1")}
+          <span className="text-primary"> {t("about.title2")}</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            {/* <h3 className="text-2xl font-semibold">
-              充满热情的 Web 前端开发
-            </h3> */}
 
             <div>
-              <img src="/src/assets/me.jpg" alt="我的照片" style={{ width: '100%', height: 'auto', objectFit: 'cover' }} />
+              <img src="/src/assets/me.jpg" alt={t("about.alt_text")} style={{ width: '100%', height: 'auto', objectFit: 'cover' }} />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
-                联系我
+                {t("about.contact_me")}
               </a>
 
               <a
@@ -29,7 +30,7 @@ export const AboutSection = () => {
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 download
               >
-                下载简历
+                {t("about.download_cv")}
               </a>
             </div>
           </div>
@@ -41,9 +42,9 @@ export const AboutSection = () => {
                   <Settings className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">核心技术</h4>
+                  <h4 className="font-semibold text-lg">{t("about.cards.core_tech.title")}</h4>
                   <p className="text-muted-foreground">
-                    掌握HTML5/CSS3/Sass/ES6+/TypeScript，深入理解W3C标准，擅长Ajax性能优化；
+                    {t("about.cards.core_tech.description")}
                   </p>
                 </div>
               </div>
@@ -54,11 +55,9 @@ export const AboutSection = () => {
                   <Layers className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">框架工具</h4>
-                  <p className="text-muted-foreground">
-                    掌握Angular生态（RxJS/Ionic/CLI），熟练使用 Vue(Vuex + Nuxt)；
-                    掌握ECharts(动态风险热力图、K线图）各类复杂图表，主导Flexmonster Pivot落地百万级数据下钻；
-                    熟悉BPMN流程引擎与Hybrid App开发，能独立完成跨端功能实现；
+                  <h4 className="font-semibold text-lg">{t("about.cards.frameworks.title")}</h4>
+                  <p className="text-muted-foreground whitespace-pre-line">
+                    {t("about.cards.frameworks.description")}
                   </p>
                 </div>
               </div>
@@ -70,9 +69,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">工程能力</h4>
+                  <h4 className="font-semibold text-lg">{t("about.cards.engineering.title")}</h4>
                   <p className="text-muted-foreground">
-                    熟悉Webpack/Gulp构建优化，Git协作规范，推动组件化开发与持续集成；
+                    {t("about.cards.engineering.description")}
                   </p>
                 </div>
               </div>
@@ -84,10 +83,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">金融领域</h4>
-                  <p className="text-muted-foreground">
-                    参与FRTB风控、VaR计算模块开发，对接IRS/CDS等衍生品交易系统，熟悉银行级接口规范；
-                    掌握国密SM4算法，在虚拟货币交易、客户敏感信息传输等场景中实现数据加密处理，保证用户数据及交易安全。
+                  <h4 className="font-semibold text-lg">{t("about.cards.financial.title")}</h4>
+                  <p className="text-muted-foreground whitespace-pre-line">
+                    {t("about.cards.financial.description")}
                   </p>
                 </div>
               </div>

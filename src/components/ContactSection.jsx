@@ -7,13 +7,15 @@ import {
   Send,
   Twitch,
   Twitter,
-  Globe
+  Globe,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const ContactSection = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -24,8 +26,8 @@ export const ContactSection = () => {
 
     setTimeout(() => {
       toast({
-        title: "消息已发送！",
-        description: "感谢您的留言，我会尽快与您联系。",
+        title: t("contact.toast.success.title"),
+        description: t("contact.toast.success.description"),
       });
       setIsSubmitting(false);
     }, 1500);
@@ -34,16 +36,18 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          联系 <span className="text-primary"> 我</span>
+          {t("contact.title1")} <span className="text-primary"> {t("contact.title2")}</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          有项目想法或希望合作？欢迎随时联系我。
-          我始终乐于探讨新的机会。
+          {t("contact.description")}
         </p>
 
         <div className="flex justify-center items-center">
           <div className="space-y-8 text-center">
+            <h3 className="text-2xl font-semibold mb-6">
+              {t("contact.info_title")}
+            </h3>
 
             <div className="space-y-6 flex flex-col items-start">
               <div className="grid grid-cols-[48px_1fr] items-center min-h-[56px] gap-4">
@@ -57,7 +61,7 @@ export const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    https://www.jianshu.com/u/b1652e41c9ae
+                    {t("contact.blog")}
                   </a>
                 </div>
               </div>
@@ -66,12 +70,11 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  {/* <h4 className="font-medium">Email</h4> */}
                   <a
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    carriexin928@gmail.com
+                    {t("contact.email")}
                   </a>
                 </div>
               </div>
@@ -80,12 +83,11 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  {/* <h4 className="font-medium">Phone</h4> */}
                   <a
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +86159****9431
+                    {t("contact.phone")}
                   </a>
                 </div>
               </div>
@@ -94,14 +96,12 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  {/* <h4 className="font-medium">Location</h4> */}
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    深圳，广东，中国
+                    {t("contact.location")}
                   </a>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
