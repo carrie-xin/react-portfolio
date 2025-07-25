@@ -17,7 +17,7 @@ export const AboutSection = () => {
           <div className="space-y-6">
 
             <div>
-              <img src="/src/assets/me.jpg" alt={t("about.alt_text")} style={{ width: '100%', height: 'auto', objectFit: 'cover' }} />
+              <img src="/about/me.jpg" alt={t("about.alt_text")} style={{ width: '100%', height: 'auto', objectFit: 'cover' }} />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -26,7 +26,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/src/assets/辛集芳简历-Web前端.pdf"
+                href="/about/辛集芳简历-Web前端.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 download
               >
